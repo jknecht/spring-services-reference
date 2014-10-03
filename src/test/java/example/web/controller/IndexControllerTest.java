@@ -1,9 +1,11 @@
-package example.controller;
+package example.web.controller;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import example.web.controller.IndexController;
 
 public class IndexControllerTest {
 

@@ -1,4 +1,4 @@
-package example.controller;
+package example.api.v1.controller;
 
 import static org.junit.Assert.assertTrue;
 
@@ -6,6 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import example.api.v1.controller.GreetingController;
+import example.api.v1.domain.Greeting;
 
 public class GreetingControllerTest {
 
