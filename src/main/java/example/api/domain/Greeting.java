@@ -1,4 +1,4 @@
-package example.controller;
+package example.api.domain;
 
 import java.io.Serializable;
 
