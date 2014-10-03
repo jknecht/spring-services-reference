@@ -4,6 +4,7 @@ import org.springframework.core.convert.converter.Converter;
 
 import example.generated.weather.WeatherReturn;
 import example.service.api.CurrentWeather;
+import example.service.api.WeatherServiceException;
 
 public class WeatherSoapResponseConverter implements Converter<WeatherReturn, CurrentWeather> {
 
@@ -22,6 +23,8 @@ public class WeatherSoapResponseConverter implements Converter<WeatherReturn, Cu
             weather.setWeatherStationCity(source.getWeatherStationCity());
             weather.setWind(source.getWind());
             weather.setWindchill(source.getWindChill());
+        } else {
+            throw new WeatherServiceException(source.getResponseText());
         }
         return weather;
     }
