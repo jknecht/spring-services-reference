@@ -1,15 +1,15 @@
-package example.api.controller;
+package example.api.v1.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import example.api.domain.Greeting;
+import example.api.v1.domain.Greeting;
 
 
-@Controller
-@RequestMapping("/greeting")
+@RestController
+@RequestMapping("/api/v1/greeting")
 public class GreetingController {
 
     @RequestMapping(value = "/{name}")

@@ -1,4 +1,4 @@
-package example.api.domain;
+package example.api.v1.domain;
 
 import java.io.Serializable;
 
