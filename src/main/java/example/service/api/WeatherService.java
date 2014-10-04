@@ -9,6 +9,6 @@ public interface WeatherService {
      * @param zipCode
      * @return
      */
-    CurrentWeather currentWeatherForZipCode(String zipCode);
+    CurrentWeather currentWeatherForZipCode(String zipCode) throws WeatherServiceException;
 
 }
